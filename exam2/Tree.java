@@ -79,6 +79,23 @@ public class Tree{
 
     //prints the tree
     public void printTree(){
-        //prints the tree
+        //base case
+        if(this.vacant){
+            return;
+        }
+        //recursive case
+        //print the key
+        System.out.print(key);
+        if(!leftNode.vacant || !rightNode.vacant){
+            System.out.print("(");
+            if(!leftNode.vacant){
+                leftNode.printTree();
+                System.out.print(", ");
+            }
+            if(!rightNode.vacant){
+                rightNode.printTree();
+            }
+            System.out.print(")");
+        }
     }
 }
