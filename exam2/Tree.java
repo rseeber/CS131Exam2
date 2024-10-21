@@ -86,12 +86,16 @@ public class Tree{
         //recursive case
         //print the key
         System.out.print(key);
+        //if you have at least 1 child, print parenthesis
         if(!leftNode.vacant || !rightNode.vacant){
             System.out.print("(");
+            //now determine which child(s)
+            //print left
             if(!leftNode.vacant){
                 leftNode.printTree();
                 System.out.print(", ");
             }
+            //print right
             if(!rightNode.vacant){
                 rightNode.printTree();
             }
