@@ -18,8 +18,9 @@ public class Main {
         t.reverse();
         t.printTree();
         System.out.print("\n\nNow invert the tree (flip upside-down)...\n");
-        //t.invert();
+        t.printTreeInverted();
         System.out.print("\n");
+
     }
    
 }

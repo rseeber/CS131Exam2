@@ -9,6 +9,9 @@ public class Tree{
     Tree parent;
     //each node has a key
     int key;
+    //
+    int height;
+    
     //creates a vacant tree
     public Tree(){
         this.vacant = true;
@@ -101,5 +104,18 @@ public class Tree{
             }
             System.out.print(")");
         }
+    }
+
+    public void printTreeInverted(){
+
+        String line1, line2, line3;
+        line1 = line2 = line3 = "";
+
+        line1 = this.key + "";
+        line2 = this.leftNode.key + ", " + this.rightNode.key;
+        line3 = this.leftNode.leftNode.key + ", " + this.leftNode.rightNode.key 
+            + ", " + this.rightNode.leftNode.key + ", " + this.rightNode.rightNode.key;
+
+        System.out.print(line3 + "\n" + line2 + "\n" + line1);
     }
 }
