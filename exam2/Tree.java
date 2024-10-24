@@ -1,3 +1,10 @@
+/*
+ * Java Binary Tree Implementation (https://github.com/rseeber/CS131Exam2.git)
+ * Authors: River Seeber and Genesis Vasquez
+ * Date: 10/23/2024
+ * Version: 1.4.1
+ */
+
 package exam2;
 
 public class Tree{
